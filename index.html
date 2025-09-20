@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Paula Arruda, UX/UI Designer e Front-End Developer. Projetos em HTML, CSS, JavaScript e React Native.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Offside&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfólio Paula.</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                < Paula. />
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Work</a></li>
+                    <li><a href="https://drive.google.com/file/d/19XS5gKUlkeUnCrJnTsNCrxSr6a3ohqry/view?usp=drive_link"
+                            target="_blank" class="nav-link">Resume</a></li>
+                    <li><a href="mailto:paularcsarruda@gmail.com" class="contact-btn">Get in Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <img src="assets/background.jpg" alt="background" class="background-image">
+        <div class="container">
+            <h1 class="hero-title"><span id="typing"></span></h1>
+            <p class="hero-subtitle">A UX|UI Designer and Front-end Developer based in Recife, Brazil</p>
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="false" role="img" aria-label="Role para baixo">
+            <span class="scroll-text">Scroll down</span>
+            <svg class="mouse" width="40" height="60" viewBox="0 0 40 70" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="36" height="66" rx="18" ry="18" fill="none" stroke="currentColor"
+                    stroke-width="3" />
+                <circle class="wheel" cx="20" cy="18" r="3" fill="currentColor" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Front-End Developer passionate about creating modern and responsive user interfaces.
+                        Recently graduated, I am continuously improving my skills and exploring best practices in web
+                        and mobile development.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/perfil.png" alt="Paula">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p style="text-align:center; margin-bottom:2rem;">My expertise across various technologies and tools.</p>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i class="fab fa-react skill-icon"></i>
+                    <span class="skill-name">React Native</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span class="skill-name">PostgreSQL</span>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fab fa-figma skill-icon" aria-hidden="true"></i>
+                    <span class="skill-name">Figma</span>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fab fa-git-alt skill-icon" aria-hidden="true"></i>
+                    <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-item fade-in">
+                    <i class="fas fa-mobile-alt skill-icon" aria-hidden="true"></i>
+                    <span class="skill-name">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Case Studies</h2>
+            <p style="text-align:center; margin-bottom:2rem;">A collection of projects I've worked on</p>
+
+            <div class="project-list">
+                <!-- Projeto 1 -->
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <img src="assets/petpill-mockup.png" alt="PetPill App" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title">PetPill</h3>
+                            <p class="project-description">A medication reminder app for pets, developed with React
+                                Native and Firebase. It allows pet owners to schedule, manage, and receive alerts for
+                                their pets' medications, improving organization and daily care.</p>
+                            <div class="project-technologies">
+                                <i class="fab fa-react tech-icon" title="React Native"></i>
+                                <i class="fab fa-js-square tech-icon" title="JavaScript"></i>
+                                <i class="fas fa-database tech-icon" title="Firebase"></i>
+                            </div>
+                        </div>
+                        <a href="https://github.com/paularcsarruda/PetPill" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <img src="assets/travels-mockup.png" alt="Travel's Agency" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title">Travel's</h3>
+                            <p class="project-description">Web Page for a Travel Agency. Responsive design with HTML5,
+                                CSS3 and JavaScript, featuring travel packages and booking functionality.</p>
+                            <div class="project-technologies">
+                                <i class="fab fa-html5 tech-icon" title="HTML5"></i>
+                                <i class="fab fa-css3-alt tech-icon" title="CSS3"></i>
+                                <i class="fab fa-js-square tech-icon" title="JavaScript"></i>
+                            </div>
+                        </div>
+                        <a href="https://github.com/paularcsarruda/Mockup-Agencia-de-Turismo" target="_blank"
+                            class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/paularcsarruda" target="_blank" class="social-link"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/paula-roberta-arruda-b88166373" target="_blank"
+                    class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.behance.net/paulaarruda1" target="_blank" class="social-link"><i
+                        class="fab fa-behance"></i></a>
+                <a href="mailto:paularcsarruda@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-text">Interested in working together? I'd love to hear from you.</p>
+            <p>&copy; 2025. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+@use 'variables' as *;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin section-padding {
+    padding: 5rem 0;
+    
+    @media (max-width: $breakpoint-md) {
+        padding: 3rem 0;
+    }
+}
+
+@mixin container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin section-title {
+    text-align: center;
+    margin-bottom: $spacing-lg;
+    font-size: 2rem;
+    color: $primary-color;
+    position: relative;
+    padding-bottom: 15px;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(120deg, #7f254d, #55226c);
+        border-radius: 3px;
+    }
+    
+    @media (max-width: $breakpoint-md) {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin btn {
+    display: inline-block;
+    background-color: $primary-color;
+    color: $white;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius;
+    transition: $transition;
+    border: none;
+    cursor: pointer;
+    box-shadow: $box-shadow;
+    
+    &:hover {
+        background-color: #7D5293;
+        transform: translateY(-5px);
+    }
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == sm {
+        @media (max-width: #{$breakpoint-sm}) { @content; }
+    }
+    @if $breakpoint == md {
+        @media (max-width: #{$breakpoint-md}) { @content; }
+    }
+    @if $breakpoint == lg {
+        @media (max-width: #{$breakpoint-lg}) { @content; }
+    }
+    @if $breakpoint == xl {
+        @media (max-width: #{$breakpoint-xl}) { @content; }
+    }
+}

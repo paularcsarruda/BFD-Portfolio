@@ -1,0 +1,97 @@
+@use 'variables' as *;
+
+.projects {
+    background-color: $gray-light;
+    padding: 5rem 0;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+}
+
+.project-item {
+    display: flex;
+    background: $white;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    transition: $transition;
+    
+    &:hover {
+        transform: translateY(-5px);
+    }
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.project-image-container {
+    flex: 0 0 40%;
+    overflow: hidden;
+    
+    @media (max-width: 768px) {
+        flex: 0 0 250px;
+    }
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-content {
+    flex: 1;
+    padding: $spacing-md;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: $spacing-sm;
+    color: $primary-color;
+}
+
+.project-description {
+    margin-bottom: $spacing-md;
+    line-height: 1.6;
+}
+
+.project-technologies {
+    display: flex;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-md;
+}
+
+.tech-icon {
+    font-size: 1.8rem;
+    color: $primary-color;
+    transition: $transition;
+    
+    &:hover {
+        color: $third-color;
+        transform: translateY(-3px);
+    }
+}
+
+.project-link {
+    align-self: flex-start;
+    color: $primary-color;
+    font-size: 1.5rem;
+    transition: $transition;
+    
+    &:hover {
+        color: $third-color;
+        transform: translateY(-3px);
+    }
+}

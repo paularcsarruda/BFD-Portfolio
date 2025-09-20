@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+.footer {
+    background: linear-gradient(120deg, #B175F2, #FDD3CD, #f2bb6d);
+    color: $white;
+    text-align: center;
+    padding: $spacing-lg;
+}
+
+.footer-text {
+    margin-bottom: $spacing-md;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-md;
+    margin: $spacing-md 0;
+}
+
+.social-link {
+    color: $white;
+    font-size: 1.5rem;
+    transition: $transition;
+    
+    &:hover {
+        color: $gray-light;
+    }
+}
